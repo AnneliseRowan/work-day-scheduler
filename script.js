@@ -2,7 +2,6 @@ let timeNow = moment().format("dddd, MMMM Do YYYY");
 let hourNow = moment().format("h"); 
 let current24 = Number(moment().format("HH")); 
 let hourInterval = Number(hourNow); 
-let keepTime; 
 
 const hr9 = $("#hour1").text();
 const hr10 = $("#hour2").text(); 
@@ -36,24 +35,24 @@ $("#btn4").click(function() {
     localStorage.setItem(hr12Str, $("#text4").val())
 })
 $("#btn5").click(function() {
-    const hr1Str = JSON.stringify(hr1);
-    localStorage.setItem(hr1Str, $("#text5").val())
+    const hr13Str = JSON.stringify(hr13);
+    localStorage.setItem(hr13Str, $("#text5").val())
 })
 $("#btn6").click(function() {
-    const hr2Str = JSON.stringify(hr2);
-    localStorage.setItem(hr2Str, $("#text6").val())
+    const hr14Str = JSON.stringify(hr14);
+    localStorage.setItem(hr14Str, $("#text6").val())
 })
 $("#btn7").click(function() {
-    const hr3Str = JSON.stringify(hr3);
-    localStorage.setItem(hr3Str, $("#text7").val())
+    const hr15Str = JSON.stringify(hr15);
+    localStorage.setItem(hr15Str, $("#text7").val())
 })
 $("#btn8").click(function() {
-    const hr4Str = JSON.stringify(hr4);
-    localStorage.setItem(hr4Str, $("#text8").val())
+    const hr16Str = JSON.stringify(hr16);
+    localStorage.setItem(hr16Str, $("#text8").val())
 })
 $("#btn9").click(function() {
-    const hr5tr = JSON.stringify(hr5);
-    localStorage.setItem(hr5tr, $("#text9").val())
+    const hr17tr = JSON.stringify(hr17);
+    localStorage.setItem(hr17tr, $("#text9").val())
 })
 
 
