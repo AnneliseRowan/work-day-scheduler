@@ -33,7 +33,6 @@ $("#text16").val(localStorage.getItem(JSON.stringify(hr16)));
 $("#text17").val(localStorage.getItem(JSON.stringify(hr17)));
 
 
-
 $("#btn1").click(function() {
     localStorage.setItem(hr9, $("#text1").val());
 })
@@ -62,90 +61,89 @@ $("#btn9").click(function() {
     localStorage.setItem(hr17, $("#text9").val());
 })
 
-
 hourColor();
 
 function hourColor() {
     if(Number(hr9) <= current24) {
-        $("#text9").addClass("past")
+        $("#text9").addClass("past");
     }
     if(Number(hr9) > current24) {
-        $("#text9").addClass("future")
+        $("#text9").addClass("future");
     }
     if(Number(hr9) === current24) {
-        $("#text9").addClass("present")
+        $("#text9").addClass("present");
     }
     if(Number(hr10) <= current24) {
-        $("#text10").addClass("past")
+        $("#text10").addClass("past");
     }
     if(Number(hr10) > current24) {
-        $("#text10").addClass("future")
+        $("#text10").addClass("future");
     }
     if(Number(hr10) === current24) {
-        $("#text10").addClass("present")
+        $("#text10").addClass("present");
     }
     if(Number(hr11) <= current24) {
-        $("#text11").addClass("past")
+        $("#text11").addClass("past");
     }
     if(Number(hr11) > current24) {
-        $("#text11").addClass("future")
+        $("#text11").addClass("future");
     }
     if(Number(hr11) === current24) {
-        $("#text11").addClass("present")
+        $("#text11").addClass("present");
     }
     if(Number(hr12) <= current24) {
-        $("#text12").addClass("past")
+        $("#text12").addClass("past");
     }
     if(Number(hr12) > current24) {
-        $("#text12").addClass("future")
+        $("#text12").addClass("future");
     }
     if(Number(hr12) === current24) {
-        $("#text12").addClass("present")
+        $("#text12").addClass("present");
     }
     if(Number(hr13) <= current24) {
-        $("#text13").addClass("past")
+        $("#text13").addClass("past");
     }
     if(Number(hr13) > current24) {
-        $("#text13").addClass("future")
+        $("#text13").addClass("future");
     }
     if(Number(hr13) === current24) {
-        $("#text13").addClass("present")
+        $("#text13").addClass("present");
     }
     if(Number(hr14) <= current24) {
-        $("#text14").addClass("past")
+        $("#text14").addClass("past");
     }
     if(Number(hr14) > current24) {
-        $("#text14").addClass("future")
+        $("#text14").addClass("future");
     }
     if(Number(hr14) === current24) {
-        $("#text14").addClass("present")
+        $("#text14").addClass("present");
     }
     if(Number(hr15) <= current24) {
-        $("#text15").addClass("past")
+        $("#text15").addClass("past");
     }
     if(Number(hr15) > current24) {
-        $("#text15").addClass("future")
+        $("#text15").addClass("future");
     }
     if(Number(hr15) === current24) {
-        $("#text15").addClass("present")
+        $("#text15").addClass("present");
     }
     if(Number(hr16) <= current24) {
-        $("#text16").addClass("past")
+        $("#text16").addClass("past");
     }
     if(Number(hr16) > current24) {
-        $("#text16").addClass("future")
+        $("#text16").addClass("future");
     }
     if(Number(hr16) === current24) {
-        $("#text16").addClass("present")
+        $("#text16").addClass("present");
     }
     if(Number(hr17) <= current24) {
-        $("#text17").addClass("past")
+        $("#text17").addClass("past");
     }
     if(Number(hr17) > current24) {
-        $("#text17").addClass("future")
+        $("#text17").addClass("future");
     }
     if(Number(hr17) === current24) {
-        $("#text17").addClass("present")
+        $("#text17").addClass("present");
     }
 }
 
