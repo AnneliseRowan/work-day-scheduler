@@ -34,31 +34,31 @@ $("#text17").val(localStorage.getItem(JSON.stringify(hr17)));
 
 
 $("#btn1").click(function() {
-    localStorage.setItem(hr9, $("#text1").val());
+    localStorage.setItem(hr9, $("#text9").val());
 })
 $("#btn2").click(function() {
-    localStorage.setItem(hr10, $("#text2").val());;
+    localStorage.setItem(hr10, $("#text10").val());;
 })
 $("#btn3").click(function() {
-    localStorage.setItem(hr11, $("#text3").val());
+    localStorage.setItem(hr11, $("#text11").val());
 })
 $("#btn4").click(function() {
-    localStorage.setItem(hr12, $("#text4").val());
+    localStorage.setItem(hr12, $("#text12").val());
 })
 $("#btn5").click(function() {
-    localStorage.setItem(hr13, $("#text5").val());
+    localStorage.setItem(hr13, $("#text13").val());
 })
 $("#btn6").click(function() {
-    localStorage.setItem(hr14, $("#text6").val());
+    localStorage.setItem(hr14, $("#text14").val());
 })
 $("#btn7").click(function() {
-    localStorage.setItem(hr15, $("#text7").val());
+    localStorage.setItem(hr15, $("#text15").val());
 })
 $("#btn8").click(function() {
-    localStorage.setItem(hr16, $("#text8").val());
+    localStorage.setItem(hr16, $("#text16").val());
 })
 $("#btn9").click(function() {
-    localStorage.setItem(hr17, $("#text9").val());
+    localStorage.setItem(hr17, $("#text17").val());
 })
 
 hourColor();
