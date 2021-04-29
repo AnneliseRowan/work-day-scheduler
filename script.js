@@ -17,15 +17,15 @@ const hr17 = $("#hour17").text();
 $("#currentDay").text(timeNow); 
 
 
-$("#text9").val(localStorage.getItem(JSON.stringify(hr9))); 
-$("#text10").val(localStorage.getItem(JSON.stringify(hr10)));
-$("#text11").val(localStorage.getItem(JSON.stringify(hr11)));
-$("#text12").val(localStorage.getItem(JSON.stringify(hr12)));
-$("#text13").val(localStorage.getItem(JSON.stringify(hr13)));
-$("#text14").val(localStorage.getItem(JSON.stringify(hr14)));
-$("#text15").val(localStorage.getItem(JSON.stringify(hr15)));
-$("#text16").val(localStorage.getItem(JSON.stringify(hr16)));
-$("#text17").val(localStorage.getItem(JSON.stringify(hr17)));
+$("#text9").val(localStorage.getItem("9")); 
+$("#text10").val(localStorage.getItem("10"));
+$("#text11").val(localStorage.getItem("11"));
+$("#text12").val(localStorage.getItem("12"));
+$("#text13").val(localStorage.getItem("13"));
+$("#text14").val(localStorage.getItem("14"));
+$("#text15").val(localStorage.getItem("15"));
+$("#text16").val(localStorage.getItem("16"));
+$("#text17").val(localStorage.getItem("17"));
 
 
 $("#btn1").click(function() {
