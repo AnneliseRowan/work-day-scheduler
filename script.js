@@ -16,11 +16,6 @@ const hr17 = $("#hour17").text();
 
 $("#currentDay").text(timeNow); 
 
-/*
-if ($("#currentDay").text(timeNow) !== $("#currentDay").text(timeNow)) {
-    reset(); 
-}
-*/
 
 $("#text9").val(localStorage.getItem(JSON.stringify(hr9))); 
 $("#text10").val(localStorage.getItem(JSON.stringify(hr10)));
@@ -145,9 +140,5 @@ function hourColor() {
     if(Number(hr17) === current24) {
         $("#text17").addClass("present");
     }
-}
-
-var addHr = function() {
-    return $(".time").text() + "H"; 
 }
 
