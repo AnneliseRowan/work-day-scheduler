@@ -1,9 +1,5 @@
 let timeNow = moment().format("dddd, MMMM Do YYYY"); 
-//let hourNow = moment().format("h"); 
 let current24 = Number(moment().format("HH")); 
-//let hourInterval = Number(hourNow); 
-
-console.log(current24);
 
 const hr9 = $("#hour9").text();
 const hr10 = $("#hour10").text(); 
@@ -16,16 +12,13 @@ const hr16 = $("#hour16").text();
 const hr17 = $("#hour17").text();  
 
 function checkTimeOfDay() {
-   if(current24 === 8) {
+   if(current24 === 9) {
         localStorage.clear(); 
    }
  }
  checkTimeOfDay();
 
-
-
 $("#currentDay").text(timeNow); 
-
 
 $("#text9").val(localStorage.getItem("9")); 
 $("#text10").val(localStorage.getItem("10"));
