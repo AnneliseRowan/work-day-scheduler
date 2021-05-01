@@ -1,4 +1,6 @@
-let timeNow = moment().format("dddd, MMMM Do YYYY"); 
+var timeDisplay = $("#currentDay"); 
+
+let timeNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a'); 
 let current24 = Number(moment().format("HH")); 
 
 const hr9 = $("#hour9").text();
@@ -12,13 +14,20 @@ const hr16 = $("#hour16").text();
 const hr17 = $("#hour17").text();  
 
 function checkTimeOfDay() {
-   if(current24 === 9) {
+   if(current24 <= 9 && current24 >= 17) {
         localStorage.clear(); 
    }
  }
- checkTimeOfDay();
 
-$("#currentDay").text(timeNow); 
+checkTimeOfDay();
+
+function displayTime() {
+    var timeNow = moment().format("MMM DD, YYYY [at] hh:mm:ss a"); 
+    timeDisplay.text(timeNow); 
+}
+
+setInterval(displayTime, 1000); 
+
 
 $("#text9").val(localStorage.getItem("9")); 
 $("#text10").val(localStorage.getItem("10"));
@@ -59,7 +68,6 @@ $("#btn9").click(function() {
     localStorage.setItem(hr17, $("#text17").val());
 })
 
-hourColor();
 
 function hourColor() {
     if(Number(hr9) <= current24) {
@@ -144,4 +152,6 @@ function hourColor() {
         $("#text17").addClass("present");
     }
 }
+
+hourColor();
 
